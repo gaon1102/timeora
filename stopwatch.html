@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Stopwatch · 온라인 스톱워치 | Timeora</title>
+<meta name="description" content="Free online stopwatch with lap times. 랩 기록을 지원하는 무료 온라인 스톱워치.">
+<!-- Paste your Google AdSense snippet here, inside <head>, after your account is created -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol><symbol id="i-timer" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="M12 14l3-3"/><circle cx="12" cy="14" r="8"/></symbol><symbol id="i-stopwatch" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 1.5"/><path d="M10 2h4"/><path d="M12 2v3"/></symbol><symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol><symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol><symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol><symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><polygon points="7 4 20 12 7 20 7 4"/></symbol></svg>
+<div class="topbar"><div class="topin">
+<a class="brand" href="index.html"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><span>Timeora</span></a>
+<nav role="tablist">
+<a href="index.html" data-tab="world"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg><span data-i18n="world">World Clock</span></a>
+<a href="alarm.html" data-tab="alarm"><svg class="ic" aria-hidden="true"><use href="#i-bell"/></svg><span data-i18n="alarm">Alarm</span></a>
+<a href="timer.html" data-tab="timer"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg><span data-i18n="timer">Timer</span></a>
+<a href="stopwatch.html" data-tab="stopwatch" aria-current="page"><svg class="ic" aria-hidden="true"><use href="#i-stopwatch"/></svg><span data-i18n="stopwatch">Stopwatch</span></a>
+</nav>
+<div class="tools"><button id="langBtn" class="pill"></button><button id="setBtn" class="iconbtn" aria-haspopup="dialog" aria-label="Settings"><svg class="ic" aria-hidden="true"><use href="#i-gear"/></svg></button><button id="themeBtn" class="iconbtn" aria-label="Theme"><svg class="ic" aria-hidden="true"><use id="themeUse" href="#i-sun"/></svg></button></div>
+</div></div>
+<div class="layout">
+<aside class="side"><div class="ad-side"><!-- Left vertical ad slot (160x600). Put your AdSense unit here. --></div></aside>
+<div class="wrap">
+<main>
+<section id="stopwatch" class="panel spaced">
+<div class="pagehead"><span class="hicon"><svg class="ic" aria-hidden="true"><use href="#i-stopwatch"/></svg></span><h1 data-i18n="stopwatch">Stopwatch</h1><p data-i18n="subStopwatch">Measure time precisely and record laps.</p></div>
+<div id="swTime" class="big">00:00.00</div>
+<div class="ctrl"><button id="swL" class="round"></button><button id="swR" class="round go"></button></div>
+<div id="swLaps"></div>
+<div class="info"><div class="infohead"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="more">How to use</span></div><div class="infobody"><div class="guide-wrap"><div class="guide" lang="en"><ol><li>Press Start to begin timing and Stop to pause. Press Start again to continue.</li><li>While it is running, press Lap to record a split. Each lap shows the time since the previous one.</li><li>When you have three or more laps, the fastest is shown in green and the slowest in red.</li><li>Press Reset while stopped to clear the time and all laps.</li></ol><h3>Good to know</h3><ul><li>The display shows minutes, seconds and hundredths of a second.</li><li>The stopwatch is not saved. Reloading or closing the page clears it.</li></ul></div><div class="guide" lang="ko" hidden><ol><li>‘시작’을 누르면 측정이 시작되고 ‘중지’를 누르면 멈춥니다. 다시 ‘시작’을 누르면 이어서 측정합니다.</li><li>측정 중에 ‘랩’을 누르면 구간 기록이 남습니다. 각 랩에는 이전 랩 이후의 시간이 표시됩니다.</li><li>랩이 3개 이상이면 가장 빠른 랩은 초록색, 가장 느린 랩은 빨간색으로 표시됩니다.</li><li>멈춘 상태에서 ‘재설정’을 누르면 시간과 모든 랩이 지워집니다.</li></ol><h3>알아두면 좋은 점</h3><ul><li>화면에는 분, 초, 100분의 1초가 표시됩니다.</li><li>스톱워치는 저장되지 않습니다. 페이지를 새로고침하거나 닫으면 기록이 사라집니다.</li></ul></div></div></div></div>
+</section>
+</main>
+<div class="ad"><!-- AdSense ad unit goes here --></div>
+<footer><a href="contact.html" data-i18n="contact">Contact</a> &middot; <a href="privacy.html" data-i18n="privacy">Privacy Policy</a> &middot; &copy; 2026 timeora.com</footer>
+</div>
+<aside class="side"><div class="ad-side"><!-- Right vertical ad slot (160x600). Put your AdSense unit here. --></div></aside>
+</div>
+<div id="settings" hidden role="dialog" aria-modal="true" aria-labelledby="setTitle"><div class="box">
+<div class="sethead"><h2 id="setTitle" data-i18n="settings">Settings</h2><button id="setClose" class="x" aria-label="Close">&times;</button></div>
+<div class="field"><label for="sH24" data-i18n="use24">24-hour time</label><input type="checkbox" id="sH24" class="sw"></div>
+<div class="field"><label for="sSec" data-i18n="showSec">Show seconds</label><input type="checkbox" id="sSec" class="sw"></div>
+<div class="field col"><span data-i18n="numColor">Number color</span><div id="swatches" class="swatches"></div></div>
+<div class="field"><label for="sVol" data-i18n="volume">Volume</label><input type="range" id="sVol" min="0" max="100" step="5"></div>
+<button id="sReset" class="pill" data-i18n="resetAll">Reset to defaults</button>
+</div></div>
+<div id="ring" hidden role="alertdialog" aria-labelledby="ringTitle"><div class="box"><h2 id="ringTitle"></h2><div class="btns"><button id="snooze" class="pill" data-i18n="snooze">Snooze 9 min</button><button id="stop" class="pill solid" data-i18n="stop">Stop</button></div></div></div>
+<script src="langs.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
