@@ -62,9 +62,7 @@ select,input[type=text],input[type=time],input[type=number]{background:var(--car
 .guide h3{font-size:.95rem;margin:14px 0 4px;color:var(--accent)}
 .guide ol,.guide ul{margin:6px 0;padding-left:1.3em}
 .guide li{margin:4px 0}
-.layout{display:grid;grid-template-columns:160px minmax(0,1fr) 160px;gap:20px;max-width:1800px;margin:0 auto;padding:0 12px;align-items:start}
-.side{position:sticky;top:16px;padding-top:16px}
-.ad-side{width:160px;min-height:600px;border:1px dashed var(--card2);border-radius:8px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;max-width:1800px;margin:0 auto;padding:0 12px;align-items:start}
 #worldList,#alarmList{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:12px;margin-bottom:12px}
 #worldList .card,#alarmList .card{margin:0}
 #swTime{font-size:clamp(3.5rem,13vw,9.5rem)}
@@ -81,8 +79,6 @@ select,input[type=text],input[type=time],input[type=number]{background:var(--car
 .swatches button[aria-pressed=true]{border-color:var(--accent)}
 .swatches input{width:40px;height:32px;padding:0;border:0;background:none}
 #sReset{margin-top:16px;width:100%}
-@media(max-width:1000px){.layout{grid-template-columns:minmax(0,1fr)}.side{display:none}.ad{display:block}}
-.ad{display:none;min-height:90px;margin:20px 0}
 footer{color:var(--sub);font-size:.8rem;text-align:center;padding:10px 0 24px}
 footer a{color:var(--sub)}
 #ring{position:fixed;inset:0;background:rgba(10,10,25,.85);display:flex;align-items:center;justify-content:center;z-index:10}
@@ -102,7 +98,6 @@ footer a{color:var(--sub)}
 .tools{margin-left:auto;display:flex;align-items:center;gap:6px}
 .iconbtn{background:none;width:40px;height:40px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--text)}
 .iconbtn:hover{background:var(--card2)}
-.side{top:80px}
 .card{border:1px solid var(--line);border-radius:14px}
 .pagehead{text-align:center;margin:20px 0 4px}
 .hicon{display:inline-flex;margin-bottom:8px}
@@ -224,3 +219,10 @@ footer a{color:var(--sub)}
 #timer .pagehead{margin:24px 0 4px}
 #timer .ringbox{margin:8px auto 0;width:min(420px,100%,56vh)}
 #timer .ctrl{margin:4px auto 28px}
+
+#world{position:relative}
+#world .mainpick{position:absolute;top:3px;right:0;left:auto;margin:0;z-index:6}
+#world #mainMenu{left:auto;right:0;width:320px;max-width:calc(100vw - 32px)}
+#world .tzlabel{margin-top:28px}
+/* Keep the same side gutters the (now removed) ad columns used: 160px column + 20px gap on each side */
+@media(min-width:1001px){.wrap{margin:0 180px}}
