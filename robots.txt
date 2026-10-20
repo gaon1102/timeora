@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://timeora.com/sitemap.xml
+Sitemap: https://gaon1102.github.io/timeora/sitemap.xml
