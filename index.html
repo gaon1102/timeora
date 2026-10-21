@@ -47,5 +47,8 @@
 <div id="ring" hidden role="alertdialog" aria-labelledby="ringTitle"><div class="box"><h2 id="ringTitle"></h2><div class="btns"><button id="snooze" class="pill" data-i18n="snooze">Snooze 9 min</button><button id="stop" class="pill solid" data-i18n="stop">Stop</button></div></div></div>
 <script src="langs.js"></script>
 <script src="app.js"></script>
+<script>
+(function(){const link=document.getElementById('fa');if(!link)return;function update(){link.textContent=pickLang()==='ko'?'소개':'About'}update();const original=LSTORE.set.bind(LSTORE);LSTORE.set=function(v){original(v);update()}})();
+</script>
 </body>
 </html>
