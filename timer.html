@@ -41,7 +41,7 @@
 <div class="info"><div class="infohead"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="more">How to use</span></div><div class="infobody"><div class="guide-wrap"><div class="guide" lang="en"><ol><li>Turn the hours, minutes and seconds dials by scrolling (one notch changes one number), swiping, clicking a number or typing digits, or press a preset (1, 5, 10, 15, 25, 30 or 60 minutes). Presets start right away.</li><li>Press Start. The ring and the numbers show the time left, and the countdown also appears in the browser tab title so you can follow it from another tab.</li><li>Press Pause to hold the countdown and Resume to continue. Press Cancel to clear it.</li><li>When time is up, a sound plays until you press Stop.</li></ol><h3>Good to know</h3><ul><li>Keep this tab open until the timer finishes. Closing it or putting the device to sleep will stop the timer from ringing.</li><li>Pressing Start also turns the sound on, because browsers only allow sound after you interact with the page.</li><li>Timers you start are listed under “Recently used” (up to 10, newest first). Press one to start it again.</li></ul></div><div class="guide" lang="ko" hidden><ol><li>시간, 분, 초 다이얼을 스크롤(한 칸에 숫자 하나씩)하거나 밀거나, 숫자를 누르거나 직접 입력해서 맞추거나 프리셋(1, 5, 10, 15, 25, 30, 60분)을 누릅니다. 프리셋은 누르는 즉시 시작됩니다.</li><li>‘시작’을 누르면 원과 숫자로 남은 시간이 표시되고, 브라우저 탭 제목에도 카운트다운이 나타나므로 다른 탭에서도 확인할 수 있습니다.</li><li>‘일시정지’로 멈추고 ‘계속’으로 이어갈 수 있으며, ‘취소’를 누르면 초기화됩니다.</li><li>시간이 끝나면 ‘중지’를 누를 때까지 소리가 납니다.</li></ol><h3>알아두면 좋은 점</h3><ul><li>타이머가 끝날 때까지 이 탭을 열어 두어야 합니다. 탭을 닫거나 기기가 절전 상태가 되면 울리지 않습니다.</li><li>브라우저는 사용자가 페이지를 조작한 뒤에만 소리를 허용하므로, ‘시작’을 누르면 소리도 함께 켜집니다.</li><li>시작한 타이머는 ‘최근 사용한 항목’에 최신순으로 최대 10개까지 표시되며, 누르면 같은 시간으로 다시 시작합니다.</li></ul></div></div></div></div>
 </section>
 </main>
-<footer><a href="contact.html" data-i18n="contact">Contact</a> &middot; <a href="privacy.html" data-i18n="privacy">Privacy Policy</a> &middot; &copy; 2026 timeora.com</footer>
+<footer><a href="about.html" id="fa">About</a> &middot; <a href="contact.html" data-i18n="contact">Contact</a> &middot; <a href="privacy.html" data-i18n="privacy">Privacy Policy</a> &middot; &copy; 2026 timeora.com</footer>
 </div>
 </div>
 <div id="settings" hidden role="dialog" aria-modal="true" aria-labelledby="setTitle"><div class="box">
@@ -55,5 +55,8 @@
 <div id="ring" hidden role="alertdialog" aria-labelledby="ringTitle"><div class="box"><h2 id="ringTitle"></h2><div class="btns"><button id="snooze" class="pill" data-i18n="snooze">Snooze 9 min</button><button id="stop" class="pill solid" data-i18n="stop">Stop</button></div></div></div>
 <script src="langs.js"></script>
 <script src="app.js"></script>
+<script>
+(function(){const link=document.getElementById('fa');if(!link)return;function update(){link.textContent=pickLang()==='ko'?'소개':'About'}update();const original=LSTORE.set.bind(LSTORE);LSTORE.set=function(v){original(v);update()}})();
+</script>
 </body>
 </html>
