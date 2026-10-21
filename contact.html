@@ -81,6 +81,7 @@ function apply(){
 document.documentElement.lang=lang;
 document.querySelectorAll('[data-k]').forEach(e=>{e.textContent=e.dataset.k==='privacy'?langInfo(lang)[3]:tx(e.dataset.k)});
 $('#fp').textContent=langInfo(lang)[3];
+$('#fa').textContent = lang === 'ko' ? '소개' : 'About';
 document.title=langInfo(lang)[2]+' | Timeora';
 if(typeof langLabel==='function')langLabel();
 }
