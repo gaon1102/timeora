@@ -32,7 +32,7 @@
 <div class="info"><div class="infohead"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span data-i18n="more">How to use</span></div><div class="infobody"><div class="guide-wrap"><div class="guide" lang="en"><ol><li>Press Start to begin timing and Stop to pause. Press Start again to continue.</li><li>While it is running, press Lap to record a split. Each lap shows the time since the previous one.</li><li>When you have three or more laps, the fastest is shown in green and the slowest in red.</li><li>Press Reset while stopped to clear the time and all laps.</li></ol><h3>Good to know</h3><ul><li>The display shows minutes, seconds and hundredths of a second.</li><li>The stopwatch is not saved. Reloading or closing the page clears it.</li></ul></div><div class="guide" lang="ko" hidden><ol><li>‘시작’을 누르면 측정이 시작되고 ‘중지’를 누르면 멈춥니다. 다시 ‘시작’을 누르면 이어서 측정합니다.</li><li>측정 중에 ‘랩’을 누르면 구간 기록이 남습니다. 각 랩에는 이전 랩 이후의 시간이 표시됩니다.</li><li>랩이 3개 이상이면 가장 빠른 랩은 초록색, 가장 느린 랩은 빨간색으로 표시됩니다.</li><li>멈춘 상태에서 ‘재설정’을 누르면 시간과 모든 랩이 지워집니다.</li></ol><h3>알아두면 좋은 점</h3><ul><li>화면에는 분, 초, 100분의 1초가 표시됩니다.</li><li>스톱워치는 저장되지 않습니다. 페이지를 새로고침하거나 닫으면 기록이 사라집니다.</li></ul></div></div></div></div>
 </section>
 </main>
-<footer><a href="contact.html" data-i18n="contact">Contact</a> &middot; <a href="privacy.html" data-i18n="privacy">Privacy Policy</a> &middot; &copy; 2026 timeora.com</footer>
+<footer><a href="about.html" id="fa">About</a> &middot; <a href="contact.html" data-i18n="contact">Contact</a> &middot; <a href="privacy.html" data-i18n="privacy">Privacy Policy</a> &middot; &copy; 2026 timeora.com</footer>
 </div>
 </div>
 <div id="settings" hidden role="dialog" aria-modal="true" aria-labelledby="setTitle"><div class="box">
@@ -46,5 +46,8 @@
 <div id="ring" hidden role="alertdialog" aria-labelledby="ringTitle"><div class="box"><h2 id="ringTitle"></h2><div class="btns"><button id="snooze" class="pill" data-i18n="snooze">Snooze 9 min</button><button id="stop" class="pill solid" data-i18n="stop">Stop</button></div></div></div>
 <script src="langs.js"></script>
 <script src="app.js"></script>
+<script>
+(function(){const link=document.getElementById('fa');if(!link)return;function update(){link.textContent=pickLang()==='ko'?'소개':'About'}update();const original=LSTORE.set.bind(LSTORE);LSTORE.set=function(v){original(v);update()}})();
+</script>
 </body>
 </html>
